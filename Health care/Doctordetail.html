@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctor Section</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .h-primary {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .h-secondary {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        #services {
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #services .box {
+            border: 4px solid rgb(22, 61, 21);
+            padding: 24px;
+            margin: 10px;
+            border-radius: 23px;
+            background-color: #dbfbecab;
+            width: 300px; /* Set a fixed width for better alignment, adjust as needed */
+        }
+
+        #services .box img {
+            height: 180px;
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        #services .box h2 {
+            font-size: 1.8rem;
+            color: rgb(22, 61, 21);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #services .box p {
+            font-size: 1.5rem;
+            font-family: 'Bree Serif', serif;
+            color: #555;
+            text-align: center;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            #services .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="OurDoctor">
+        <h1 class="h-primary center">Our Doctor</h1>
+        <div id="services">
+            <div class="box">
+                <img src="doctor img1.png" alt="">
+                <h2 class="h-secondary center">Dr. Amit Sharma</h2>
+                <p class="center">
+                    Paras Hospital, contactable at +91 1234567890, features the expertise of Dr. Amit Sharma, a skilled Cardiologist available Monday to Friday from 9 AM to 5 PM. Known for cardiac care excellence, Dr. Sharma provides specialized services at a consultation fee of INR 1000, ensuring comprehensive and dedicated healthcare for all cardiovascular concerns. </p>
+            </div>
+            <div class="box">
+                <img src="pngwing.com 3.png" alt="">
+                <h2 class="h-secondary center">Dr. Priya Singh</h2>
+                <p class="center">
+                    Raj Hospital, helmed by Dr. Vineet Sharma, offers outpatient services from Monday to Friday, 9 AM to 5 PM. Dr. Sharma, specializing in general healthcare, provides attentive and personalized care. For consultations, call +91 1234567890. The Outpatient Department at Raj Hospital ensures accessible healthcare with a nominal consultation fee of ₹200.</p>
+            </div>
+            <div class="box">
+                <img src="pngwing.com.png" alt="">
+                <h2 class="h-secondary center">Dr. Vineet Sharma</h2>
+                <p class="center">
+                    Raj Hospital, under the expertise of Dr. Vineet Sharma, extends outpatient services Monday to Friday, 9 AM to 5 PM. Dr. Sharma, specializing in general healthcare, provides personalized care. For consultations, reach out at +91 1234567890. The Outpatient Department at Raj Hospital ensures accessible healthcare with a nominal fee of ₹200.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

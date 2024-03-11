@@ -1,0 +1,369 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #cbf0c85e;
+    height: 1000px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar: Logo Image  */
+#logo {
+    margin: 7px 18px;
+}
+
+#logo img {
+    /* display: flex;
+    transition: all 1s ease-in-out ; */
+    width: 80px;
+    margin: -29px 0px;
+    padding: 22px 26px;
+}
+
+/* Navigation Bar: Logo Image  */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 4px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    /* padding: 4px 10px; */
+    background-color: rgb(168, 223, 196);
+}
+
+/* Button part  */
+
+.login {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 22px;
+}
+
+.btn1 {
+    margin: 6px 9px;
+    background-color: rgb(176, 223, 168);
+    color: rgb(0, 0, 0);
+    padding: 3px 20px;
+    border: 2px solid rgb(22, 70, 35);
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn1:hover {
+    background-color: rgb(228 225 220 / 50%);
+    color: white;
+    /* border: rgb(202, 126, 126); */
+}
+
+.btn {
+    padding: 6px 20px;
+    background-color: rgba(55, 237, 55, 0.89);
+    color: rgb(10, 45, 21);
+    border: 3px solid rgb(28, 74, 15);
+    margin: 47px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 3px solid white;
+    background-color: rgb(135, 222, 161);
+    color: black;
+}
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+#home::before {
+    content: "";
+    background: url(../coverimage.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+#home h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 2px 3px 3px rgb(92, 149, 92);
+
+    margin: 30px 30px;
+}
+
+#home p {
+    font-family: 'Bree Serif', serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: #c6fad1ab;
+    border-radius: 40px;
+    padding: 18px 20px;
+}
+
+/*Need Doctor support or Ambulane*/
+
+
+
+
+#DoctorSupport {
+    text-align: center;
+    padding: 50px;
+    border-radius: 23px;
+    /* border: 4px solid rgb(255, 106, 0); */
+    height: 330px;
+
+}
+
+
+
+
+
+/* Servives section  */
+
+#services {
+    margin: 10px;
+    display: flex;
+    
+}
+
+#services .box {
+    border: 4px solid rgb(22, 61, 21);
+    padding: 24px;
+    margin: 3px 10px;
+    border-radius: 23px;
+    background-color: #dbfbecab;
+}
+
+#services .box img {
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
+.services-container p {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Clients Section  */
+#client-section {
+    position: relative;
+    height: 290px;
+    z-index: -1;
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    background: url(../food.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 96%;
+    /* top: 10px; */
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 14px;
+}
+
+#clients img {
+    display: block;
+    /* z-index: 1; */
+    height: 120px;
+}
+
+/* Contact section  */
+#contact {
+    position: relative;
+    height: 680px;
+    /* z-index: -1; */
+
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    /* height: 100px; */
+    background: url(../food\ \(contact\ Us\).jpg) no-repeat center center/cover;
+    height: 680px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    margin: 34px;
+}
+
+#contact-box input,
+#content-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.1rem;
+    border: 2px solid rgb(30, 210, 72);
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+#contact-box form {
+    width: 40%;
+
+}
+
+#contact-box label {
+    font-size: 1.7rem;
+}
+
+.form-group {
+    padding: 8px 10px;
+}
+
+#contact-box button {
+    margin: 8px 220px;
+}
+
+#contact-box h4 {
+    /* margin: 8px 220px; */
+    text-align: center;
+    font-size: 1.7rem;
+    text-shadow: 2px 3px 3px rgb(92, 149, 92);
+
+}
+
+footer {
+    background-color: rgb(30, 210, 66);
+    color: black;
+}
+
+/* Utility Classes  */
+.h-primary {
+    font-size: 4rem;
+    padding: 12px;
+    text-shadow: 2px 3px 3px rgb(92, 149, 92);
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h-secondary {
+    text-shadow: 2px 3px 3px rgb(92, 149, 92);
+
+    font-size: 3rem;
+    padding: 12px;
+    /* text-shadow: 2px 3px 3px rgb(214, 130, 20); */
+}
+
+.center {
+    text-align: center;
+}
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+} */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#searchButton {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: 1px solid #4caf50;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}

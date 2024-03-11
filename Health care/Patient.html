@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food delivery services in India | myfoodcafe.com</title>
+    <link rel="stylesheet" href="Patient.css">
+    <link rel="stylesheet" media="screen and (max-width:1160px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Health logo.png" alt="myonlinemeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#Our Doctor">Our Doctor</a></li>
+            <!-- <li class="item"><a href="#Doctors">Doctors</a></li> -->
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <!-- <li class="item"><a></a></li> -->
+        </ul>
+        <div class="login">
+            <!-- <div><button class="btn1">Log out</button></div> -->
+            <div><a href="login.html"><button class="btn1">Log out</button></a></div>
+            
+
+
+
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome and ask the problem.</h1>
+        <h2>
+            <p>
+                Say, Hi to the chatbot, by clicking the link.
+            </p>
+        </h2>
+        
+        <!-- <a href="Patient.html"><button type="button">Patient</button></a> -->
+        <button class="btn" onclick="redirectToLink()">Chat with us</button>
+
+    <script>
+        function redirectToLink() {
+            window.location.href = 'https://mediafiles.botpress.cloud/b7abb549-b494-45e7-9e3c-23f18a6839f3/webchat/bot.html';
+        }
+    </script>
+        
+    </section>
+    <section id="DoctorSupport">
+        <h1 class="h-primary">If you need an Ambulance or want a doctor in your home</h1>
+        <h2>
+            Experience peace of mind with our doorstep healthcare services. Whether you require immediate medical assistance with our ambulance services or prefer the comfort of a doctor visiting your home, we're here for you. Your well-being is our priority, ensuring timely and expert care where you need it the most.
+        </h2>
+        <button class="btn">Submit</button>
+    </section>
+
+    <section id="Our Doctor">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" id="searchButton">Search</button>
+        </div>
+        <h1 class="h-primary center">Our Doctor</h1>
+        <div id="services">
+            <div class="box">
+                <img src="doctor img1.png" alt="">
+                <h2 class="h-secondary center">Dr. Amit Sharma</h2>
+                <p class="center">
+                    Paras Hospital, contactable at +91 1234567890, features the expertise of Dr. Amit Sharma, a skilled Cardiologist available Monday to Friday from 9 AM to 5 PM. Known for cardiac care excellence, Dr. Sharma provides specialized services at a consultation fee of INR 1000, ensuring comprehensive and dedicated healthcare for all cardiovascular concerns. </p>
+            </div>
+            <div class="box">
+                <img src="pngwing.com 3.png" alt="">
+                <h2 class="h-secondary center">Dr. Priya Singh</h2>
+                <p class="center">
+                    Raj Hospital, helmed by Dr. Vineet Sharma, offers outpatient services from Monday to Friday, 9 AM to 5 PM. Dr. Sharma, specializing in general healthcare, provides attentive and personalized care. For consultations, call +91 1234567890. The Outpatient Department at Raj Hospital ensures accessible healthcare with a nominal consultation fee of ₹200.</p>
+            </div>
+            <div class="box">
+                <img src="pngwing.com.png" alt="">
+                <h2 class="h-secondary center">Dr. Vineet Sharma</h2>
+                <p class="center">
+                    Raj Hospital, under the expertise of Dr. Vineet Sharma, extends outpatient services Monday to Friday, 9 AM to 5 PM. Dr. Sharma, specializing in general healthcare, provides personalized care. For consultations, reach out at +91 1234567890. The Outpatient Department at Raj Hospital ensures accessible healthcare with a nominal fee of ₹200.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name"> </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email ">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone no.">
+                </div>
+                <h4>Feedback:-</h4>
+                <div class="form-group">
+                    <label for="text"> </label>
+                    <textarea name="Feedback" id="Feedback" cols="69" rows="5"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; HealthBuddy.com. All rights are reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
